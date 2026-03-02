@@ -1,0 +1,41 @@
+# ========================
+# C build artifacts
+# ========================
+
+# Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+a.out
+program
+
+# Debug / build files
+*.stackdump
+*.log
+
+# ========================
+# Makefile artifacts
+# ========================
+
+# If you ever add these
+*.d
+*.gcda
+*.gcno
+
+# ========================
+# VS Code
+# ========================
+
+.vscode/*
+!.vscode/c_cpp_properties.json
+!.vscode/tasks.json
+
+# ========================
+# OS junk
+# ========================
+
+.DS_Store
+Thumbs.db
