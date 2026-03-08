@@ -2,7 +2,7 @@
     "configurations": [
         {
             "name": "MINGW64",
-            "compilerPath": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+            "compilerPath": "C:/msys64/ucrt64/bin/gcc.exe",
             "intelliSenseMode": "windows-gcc-x64",
             "cStandard": "c11",
             "includePath": [
