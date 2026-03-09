@@ -1,7 +1,6 @@
 #ifndef SALES_REPORT_H
 #define SALES_REPORT_H
 
-#include <stdio.h>
 
 typedef enum Month {
   JAN, FEB, MAR, APR, MAY, JUN, JUL,
