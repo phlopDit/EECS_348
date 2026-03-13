@@ -20,9 +20,8 @@ void addMatrices(const int m1[SIZE][SIZE], const int m2[SIZE][SIZE], int result[
 
 void multiplyMatrices(const int m1[SIZE][SIZE], const int m2[SIZE][SIZE], int result[SIZE][SIZE]){
   for(int i = 0; i < SIZE; i++){
-    for(int j = 0; j < SIZE; j++){
-      result[i][j] = 0;
-      for(int k = 0; k < SIZE; k++){
+    for(int k = 0; k < SIZE; k++){
+      for(int j = 0; j < SIZE; j++){
         result[i][j] += m1[i][k] * m2[k][j];
       }
     }
