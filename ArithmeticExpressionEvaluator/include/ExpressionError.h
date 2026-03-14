@@ -5,8 +5,7 @@
 
 class ExpressionError : public std::runtime_error {
     public:
-        ExpressionError(const std::string& message);
-        
+        explicit ExpressionError(const std::string& message);       
 };
 
 #endif
