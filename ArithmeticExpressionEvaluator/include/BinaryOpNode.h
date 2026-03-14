@@ -8,9 +8,9 @@ class BinaryOpNode : public ASTNode{
     TokenType op_;
     ASTNode* leftChild_;
     ASTNode* rightChild_;
-    
+
   public:
-    BinaryOpNode(TokenType op, ASTNode leftChild, ASTNode rightChild);
+    BinaryOpNode(TokenType op, ASTNode* leftChild, ASTNode* rightChild);
     ~BinaryOpNode() override;
     double evaluate() const override;
 };

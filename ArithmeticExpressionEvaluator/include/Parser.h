@@ -10,14 +10,14 @@ class Parser {
     Tokenizer tokenizer_;
     Token currentToken_;
 
-    ASTNode* parseExperssion();
+    ASTNode* parseExpression();
     ASTNode* parseTerm();
     ASTNode* parsePower();
     ASTNode* parseUnary();
     ASTNode* parsePrimary();
     void advance();
     void expect(TokenType expectedType);
-    
+
   public:
     explicit Parser(const std::string& input);
     ASTNode* parse();

@@ -1,5 +1,5 @@
-#ifndef EXPRESSIONERROR.H
-#define EXPRESSIONERROR.H
+#ifndef EXPRESSIONERROR_H
+#define EXPRESSIONERROR_H
 #include <stdexcept>
 #include <string>
 
