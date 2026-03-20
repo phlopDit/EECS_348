@@ -12,6 +12,9 @@ class Tokenizer {
 
     void skipWhiteSpace();
     Token readNum();
+    char peek() const;
+    char peekNext() const;
+    bool isAtEnd() const;
     
   public:
     explicit Tokenizer(const std::string& input);

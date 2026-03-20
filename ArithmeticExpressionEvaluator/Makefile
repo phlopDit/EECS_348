@@ -1,25 +1,18 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -pedantic -g -Iinclude
 
-TARGET = build/evaluator
-
+TARGET = build/ArithmeticExpressionEvaluator
 SRC_DIR = src
 BUILD_DIR = build
 
-SRCS = 	src/main.cpp \
-				src/ExpressionError.cpp \
-				src/Token.cpp \
-				src/Tokenizer.cpp \
-				src/Parser.cpp \
-				src/NumberNode.cpp \
-				src/UnaryOpNode.cpp \
-				src/BinaryOpNode.cpp 
+SRCS = 	$(wildcard $(SRC_DIR)/*.cpp) 
 
 OBJS = $(SRCS:$(SRC_DIR)/%.cpp=$(BUILD_DIR)/%.o)
 
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
+	mkdir -p $(BUILD_DIR)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
 	
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
