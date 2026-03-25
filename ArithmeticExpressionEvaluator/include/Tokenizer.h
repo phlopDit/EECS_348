@@ -3,7 +3,6 @@
 #include <cstddef>
 #include <string>
 #include "Token.h"
-#include "ExpressionError.h"
 
 class Tokenizer {
   private:

@@ -60,7 +60,7 @@ Token Tokenizer::getNextToken(){
 
   char current = peek();
 
-  if(std::isdigit(current) || current == '.' && std::isdigit(peekNext())){
+  if(std::isdigit(current) || (current == '.' && std::isdigit(peekNext()))){
     return readNum();
   }
 
