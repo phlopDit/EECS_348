@@ -10,7 +10,7 @@ int main () {
   ifstream file(filePath);
   
   if (!file.is_open()) {
-    cerr << "Failed to find file: " << filePath << endl;
+    cerr << "Failed to open file: " << filePath << endl;
 
     return 1;
   }
