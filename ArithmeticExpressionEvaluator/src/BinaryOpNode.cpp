@@ -19,7 +19,7 @@ double BinaryOpNode::evaluate() const{
     case TokenType::PLUS:
       return leftValue + rightValue;
     case TokenType::MINUS:
-      return leftValue + rightValue;
+      return leftValue - rightValue;
     case TokenType::MULTIPLY:
       return leftValue * rightValue;
     case TokenType::DIVIDE:
