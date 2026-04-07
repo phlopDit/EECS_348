@@ -5,7 +5,7 @@
 
 /**
  * @class ExpressionError
- * @brief Errors that occur during parsing or evaluation an arithmetic expression.
+ * @brief Errors that occur during parsing or evaluating an arithmetic expression.
  * 
  * This class derives from std::runtime_error in order to report errors with a descriptive message.
  */
