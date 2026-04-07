@@ -5,6 +5,7 @@
 
 int main() {
   std::string input;
+  std::cout << ">";
   std::getline(std::cin, input);
 
   try {

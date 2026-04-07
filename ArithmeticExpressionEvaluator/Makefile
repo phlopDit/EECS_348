@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -pedantic -g -Iinclude
 
-TARGET = build/ArithmeticExpressionEvaluator
+TARGET = build/evaluator
 TEST_TARGET = build/tests
 
 SRC_DIR = src

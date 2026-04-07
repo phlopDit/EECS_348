@@ -3,27 +3,12 @@ build/
 
 # Object files
 *.o
-*.obj
 
 # Executables
 *.exe
-*.out
-*.app
-*.dll
-
-# Static / dynamic libraries
-*.a
-*.lib
-*.so
-*.dylib
 
 # Debug files
-*.dSYM/
 *.stackdump
-
-# Temporary files
-*.tmp
-*.temp
 
 # VS Code workspace settings (optional)
 .vscode/*
@@ -32,5 +17,4 @@ build/
 !.vscode/c_cpp_properties.json
 
 # OS files
-.DS_Store
 Thumbs.db
