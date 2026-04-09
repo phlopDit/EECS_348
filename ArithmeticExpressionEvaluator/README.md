@@ -1,4 +1,4 @@
-# Arithmetic Expression Evaluator (C++)
+## Arithmetic Expression Evaluator (C++)
 
 A command-line C++ program that evaluates arithmetic expressions.
 It supports standard and unary operators while following correct PEMDAS precedence.
@@ -83,3 +83,8 @@ Output:
 | `(25 + 6 - 3` | Unmatched parentheses |
 | `1.3.25` | Malformed number |
 | `* 10 + 6` | Invalid syntax |
+
+## System Design
+
+![Design Document](docs/system-design.png)
+---
