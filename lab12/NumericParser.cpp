@@ -3,7 +3,6 @@
 #include <iomanip>
 #include <cmath>
 #include <cctype>
-#include <limits>
 
 class NumericParser {
 public:
@@ -37,7 +36,7 @@ public:
                 while (i < n && (isdigit(str[i]) || str[i] == '.')) {
                     if (str[i] == '.') {
                         if (hasDecimal) { 
-                            return INVALID_VAL; // Second decimal point ends the number
+                            return INVALID_VAL; 
                         }
                         hasDecimal = true;
                     } else {
@@ -61,7 +60,6 @@ public:
 
                 // Process Scientific Notation
                 if (i < n && (str[i] == 'e' || str[i] == 'E')) {
-                    int expStart = i;
                     i++;
                     double expSign = 1.0;
                     if (i < n && (str[i] == '+' || str[i] == '-')) {
@@ -81,12 +79,12 @@ public:
                     if (hasExpDigits) {
                         value *= std::pow(10.0, static_cast<double>(exponent * expSign));
                     } else {
-                        i = expStart; // Not a valid exponent, stop here
+                        return INVALID_VAL; // Invalid exponent format
                     }
                 }
 
                 // Range Check
-                if (std::isinf(value) || std::isnan(value)) {
+                if (std::isinf(value) || std::isnan(value) || value < -999999.99 || value > 999999.99) {
                     return INVALID_VAL;
                 }
 
@@ -117,9 +115,12 @@ int main() {
 
         if (result == -999999.99) {
             std::cout << "Invalid input: no valid floating-point number found" << std::endl;
+            // std::cout<< std::endl;
         } else {
             std::cout << "Extracted number: " << std::fixed << std::setprecision(4) << result << std::endl;
+            // std::cout<< std::endl;
         }
+        std::cout<< std::endl;
     }
 
     return 0;
